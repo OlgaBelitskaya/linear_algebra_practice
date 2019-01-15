@@ -21,3 +21,5 @@
 ### [№ 9](https://olgabelitskaya.github.io/linear_algebra_practice/work1_9.html)
 
 ### [№ 10](https://olgabelitskaya.github.io/linear_algebra_practice/work1_10.html)
+
+### [№ 11](https://olgabelitskaya.github.io/linear_algebra_practice/work1_11.html)
