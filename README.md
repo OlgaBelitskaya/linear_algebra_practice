@@ -23,3 +23,5 @@
 ### [№ 10](https://olgabelitskaya.github.io/linear_algebra_practice/work1_10.html) Линии второго порядка
 
 ### [№ 11](https://olgabelitskaya.github.io/linear_algebra_practice/work1_11.html) Поверхности второго порядка
+
+### [№ 12](https://olgabelitskaya.github.io/linear_algebra_practice/work1_12.html) Линейные пространства и линейные преобразования
