@@ -1,7 +1,7 @@
 
 # &#x1F4D1; &nbsp; Практические работы по линейной алгебре
 
-$$\begin{bmatrix} \mathfrak{a} & \mathfrak{b} & \mathfrak{c} \\ \mathfrak{d} & \mathfrak{e} & \mathfrak{f} \\ \mathfrak{g} & \mathfrak{h} & \mathfrak{i} \end{bmatrix}$$
+---
 
 ### &#x1F3B2; &nbsp; [№ 0](https://olgabelitskaya.github.io/linear_algebra_practice/work1_0.html) Подстановка (таблица перестановки элементов)
 
