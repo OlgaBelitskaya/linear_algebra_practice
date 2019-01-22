@@ -1,6 +1,19 @@
+
 # &#x1F4D1; &nbsp; Практические работы по линейной алгебре
 
-- <img src="https://latex.codecogs.com/gif.latex? \begin{bmatrix} a & b & c \\ d & e & f \\ g & h & i \end{bmatrix} /> 
+$A_{m,n} = 
+ \begin{pmatrix}
+  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
+  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
+  \vdots  & \vdots  & \ddots & \vdots  \\
+  a_{m,1} & a_{m,2} & \cdots & a_{m,n} 
+ \end{pmatrix} \times B_{n,m} = 
+ \begin{pmatrix}
+  b_{1,1} & b_{1,2} & \cdots & b_{1,m} \\
+  b_{2,1} & b_{2,2} & \cdots & b_{2,m} \\
+  \vdots  & \vdots  & \ddots & \vdots  \\
+  b_{n,1} & b_{n,2} & \cdots & b_{n,m} 
+ \end{pmatrix}$
 
 ### &#x1F3B2; &nbsp; [№ 0](https://olgabelitskaya.github.io/linear_algebra_practice/work1_0.html) Подстановка (таблица перестановки элементов)
 
@@ -16,11 +29,11 @@
 
 ### &#x1F578; &nbsp; [№ 6](https://olgabelitskaya.github.io/linear_algebra_practice/work1_6.html) Комплексные числа
 
-### &#27B09; &nbsp; [№ 7](https://olgabelitskaya.github.io/linear_algebra_practice/work1_7.html) Векторы
+### &#x27B9; &nbsp; [№ 7](https://olgabelitskaya.github.io/linear_algebra_practice/work1_7.html) Векторы
 
-### &#21C05; &nbsp; [№ 8](https://olgabelitskaya.github.io/linear_algebra_practice/work1_8.html) Прямые
+### &#x21C9; &nbsp; [№ 8](https://olgabelitskaya.github.io/linear_algebra_practice/work1_8.html) Прямые
 
-### &#27500; &nbsp; [№ 9](https://olgabelitskaya.github.io/linear_algebra_practice/work1_9.html) Плоскости
+### &#x2750; &nbsp; [№ 9](https://olgabelitskaya.github.io/linear_algebra_practice/work1_9.html) Плоскости
 
 ### &#x1F300; &nbsp; [№ 10](https://olgabelitskaya.github.io/linear_algebra_practice/work1_10.html) Линии второго порядка
 
