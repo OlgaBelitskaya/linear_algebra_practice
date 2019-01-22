@@ -1,19 +1,7 @@
 
 # &#x1F4D1; &nbsp; Практические работы по линейной алгебре
 
-$A_{m,n} = 
- \begin{pmatrix}
-  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
-  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
-  \vdots  & \vdots  & \ddots & \vdots  \\
-  a_{m,1} & a_{m,2} & \cdots & a_{m,n} 
- \end{pmatrix} \times B_{n,m} = 
- \begin{pmatrix}
-  b_{1,1} & b_{1,2} & \cdots & b_{1,m} \\
-  b_{2,1} & b_{2,2} & \cdots & b_{2,m} \\
-  \vdots  & \vdots  & \ddots & \vdots  \\
-  b_{n,1} & b_{n,2} & \cdots & b_{n,m} 
- \end{pmatrix}$
+$A_{m,n} = \begin{pmatrix} a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\ a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\ \vdots  & \vdots  & \ddots & \vdots  \\ a_{m,1} & a_{m,2} & \cdots & a_{m,n} \end{pmatrix} \times B_{n,m} = \begin{pmatrix} b_{1,1} & b_{1,2} & \cdots & b_{1,m} \\ b_{2,1} & b_{2,2} & \cdots & b_{2,m} \\ \vdots  & \vdots  & \ddots & \vdots  \\ b_{n,1} & b_{n,2} & \cdots & b_{n,m} \end{pmatrix}$
 
 ### &#x1F3B2; &nbsp; [№ 0](https://olgabelitskaya.github.io/linear_algebra_practice/work1_0.html) Подстановка (таблица перестановки элементов)
 
