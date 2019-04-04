@@ -3,7 +3,7 @@
 
 ---
 
-### &#x1F3B2; &nbsp; [№ 0](https://olgabelitskaya.github.io/linear_algebra_practice/work1_0.html) Подстановка (таблица перестановки элементов)
+### &#x1F3B2; &nbsp; [№ 0](https://olgabelitskaya.github.io/linear_algebra_practice/work0.html) Элементы комбинаторики. Подстановка
 
 ### &#x1F4C8; &nbsp; [№ 1](https://olgabelitskaya.github.io/linear_algebra_practice/work1_1.html) Матрицы
 
@@ -28,7 +28,3 @@
 ### &#x1F310; &nbsp; [№ 11](https://olgabelitskaya.github.io/linear_algebra_practice/work1_11.html) Поверхности второго порядка
 
 ### &#x1F4A0; &nbsp; [№ 12](https://olgabelitskaya.github.io/linear_algebra_practice/work1_12.html) Линейные пространства. Линейные преобразования и операторы
-
-### &#x1F6C5; &nbsp; [№ 13](https://olgabelitskaya.github.io/linear_algebra_practice/work1_13.html) Логика
-
-### &#x1F39B; &nbsp; [№ 14](https://olgabelitskaya.github.io/linear_algebra_practice/work1_14.html) Тензоры
