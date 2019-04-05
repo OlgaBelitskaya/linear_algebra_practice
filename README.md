@@ -7,9 +7,9 @@
 
 ### &#x1F300; &nbsp; [№ 1](https://olgabelitskaya.github.io/linear_algebra_practice/work1.html) Матрицы. Часть 1
 
-### &#x1F300; &nbsp; [№ 2](https://olgabelitskaya.github.io/linear_algebra_practice/work1_2.html) Матрицы. Часть 2
+### &#x1F300; &nbsp; [№ 2](https://olgabelitskaya.github.io/linear_algebra_practice/work2.html) Матрицы. Часть 2
 
-### &#x1F300; &nbsp; [№ 3](https://olgabelitskaya.github.io/linear_algebra_practice/work1_3.html) Определители, миноры и алгебраические дополнения
+### &#x1F300; &nbsp; [№ 3](https://olgabelitskaya.github.io/linear_algebra_practice/work3.html) Определители, миноры и алгебраические дополнения
 
 ### &#x1F300;&nbsp; [№ 4](https://olgabelitskaya.github.io/linear_algebra_practice/work1_4.html) Обратная матрица, ранг матрицы
 
