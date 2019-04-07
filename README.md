@@ -11,9 +11,9 @@
 
 ### &#x1F300; &nbsp; [№ 3](https://olgabelitskaya.github.io/linear_algebra_practice/work3.html) Определители, миноры и алгебраические дополнения
 
-### &#x1F300;&nbsp; [№ 4](https://olgabelitskaya.github.io/linear_algebra_practice/work1_4.html) Обратная матрица, ранг матрицы
+### &#x1F300;&nbsp; [№ 4](https://olgabelitskaya.github.io/linear_algebra_practice/work4.html) Обратная матрица, ранг матрицы
 
-### &#x1F300; &nbsp; [№ 5](https://olgabelitskaya.github.io/linear_algebra_practice/work1_5.html) Системы линейных уравнений
+### &#x1F300; &nbsp; [№ 5](https://olgabelitskaya.github.io/linear_algebra_practice/work5.html) Системы линейных уравнений
 
 ### &#x1F300; &nbsp; [№ 6](https://olgabelitskaya.github.io/linear_algebra_practice/work1_6.html) Комплексные числа
 
