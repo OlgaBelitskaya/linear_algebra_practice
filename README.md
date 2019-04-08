@@ -15,9 +15,9 @@
 
 ### &#x1F300; &nbsp; [№ 5](https://olgabelitskaya.github.io/linear_algebra_practice/work5.html) Системы линейных уравнений
 
-### &#x1F300; &nbsp; [№ 6](https://olgabelitskaya.github.io/linear_algebra_practice/work1_6.html) Комплексные числа
+### &#x1F300; &nbsp; [№ 6](https://olgabelitskaya.github.io/linear_algebra_practice/work6.html) Комплексные числа
 
-### &#x1F300; &nbsp; [№ 7](https://olgabelitskaya.github.io/linear_algebra_practice/work1_7.html) Векторы
+### &#x1F300; &nbsp; [№ 7](https://olgabelitskaya.github.io/linear_algebra_practice/work7.html) Векторы
 
 ### &#x1F300; &nbsp; [№ 8](https://olgabelitskaya.github.io/linear_algebra_practice/work1_8.html) Прямые
 
