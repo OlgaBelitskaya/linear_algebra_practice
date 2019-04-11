@@ -19,9 +19,9 @@
 
 ### &#x1F300; &nbsp; [№ 7](https://olgabelitskaya.github.io/linear_algebra_practice/work7.html) Векторы
 
-### &#x1F300; &nbsp; [№ 8](https://olgabelitskaya.github.io/linear_algebra_practice/work1_8.html) Прямые
+### &#x1F300; &nbsp; [№ 8](https://olgabelitskaya.github.io/linear_algebra_practice/work8.html) Прямые
 
-### &#x1F300;&nbsp; [№ 9](https://olgabelitskaya.github.io/linear_algebra_practice/work1_9.html) Плоскости
+### &#x1F300;&nbsp; [№ 9](https://olgabelitskaya.github.io/linear_algebra_practice/work9.html) Плоскости
 
 ### &#x1F300; &nbsp; [№ 10](https://olgabelitskaya.github.io/linear_algebra_practice/work1_10.html) Линии второго порядка
 
