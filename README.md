@@ -23,8 +23,8 @@
 
 ### &#x1F300;&nbsp; [№ 9](https://olgabelitskaya.github.io/linear_algebra_practice/work9.html) Плоскости
 
-### &#x1F300; &nbsp; [№ 10](https://olgabelitskaya.github.io/linear_algebra_practice/work1_10.html) Линии второго порядка
+### &#x1F300; &nbsp; [№ 10](https://olgabelitskaya.github.io/linear_algebra_practice/work10.html) Линии второго порядка
 
-### &#x1F300;&nbsp; [№ 11](https://olgabelitskaya.github.io/linear_algebra_practice/work1_11.html) Поверхности второго порядка
+### &#x1F300;&nbsp; [№ 11](https://olgabelitskaya.github.io/linear_algebra_practice/work11.html) Поверхности второго порядка
 
 ### &#x1F300; &nbsp; [№ 12](https://olgabelitskaya.github.io/linear_algebra_practice/work1_12.html) Линейные пространства. Линейные преобразования и операторы
