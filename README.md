@@ -28,3 +28,7 @@
 ### &#x1F300;&nbsp; [№ 11](https://olgabelitskaya.github.io/linear_algebra_practice/work11.html) Поверхности второго порядка
 
 ### &#x1F300; &nbsp; [№ 12](https://olgabelitskaya.github.io/linear_algebra_practice/work12.html) Линейные пространства. Линейные преобразования и операторы
+
+### &#x1F300; &nbsp; [№ 13](https://olgabelitskaya.github.io/linear_algebra_practice/work13.html) Логика
+
+### &#x1F300; &nbsp; № 14 Тензоры
