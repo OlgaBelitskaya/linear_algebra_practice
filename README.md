@@ -11,7 +11,7 @@
 
 ### &#x1F300; &nbsp; [№ 3](https://olgabelitskaya.github.io/linear_algebra_practice/work3.html) Определители, миноры и алгебраические дополнения
 
-### &#x1F300;&nbsp; [№ 4](https://olgabelitskaya.github.io/linear_algebra_practice/work4.html) Обратная матрица, ранг матрицы
+### &#x1F300; &nbsp; [№ 4](https://olgabelitskaya.github.io/linear_algebra_practice/work4.html) Обратная матрица, ранг матрицы
 
 ### &#x1F300; &nbsp; [№ 5](https://olgabelitskaya.github.io/linear_algebra_practice/work5.html) Системы линейных уравнений
 
@@ -21,14 +21,14 @@
 
 ### &#x1F300; &nbsp; [№ 8](https://olgabelitskaya.github.io/linear_algebra_practice/work8.html) Прямые
 
-### &#x1F300;&nbsp; [№ 9](https://olgabelitskaya.github.io/linear_algebra_practice/work9.html) Плоскости
+### &#x1F300; &nbsp; [№ 9](https://olgabelitskaya.github.io/linear_algebra_practice/work9.html) Плоскости
 
 ### &#x1F300; &nbsp; [№ 10](https://olgabelitskaya.github.io/linear_algebra_practice/work10.html) Линии второго порядка
 
-### &#x1F300;&nbsp; [№ 11](https://olgabelitskaya.github.io/linear_algebra_practice/work11.html) Поверхности второго порядка
+### &#x1F300; &nbsp; [№ 11](https://olgabelitskaya.github.io/linear_algebra_practice/work11.html) Поверхности второго порядка
 
 ### &#x1F300; &nbsp; [№ 12](https://olgabelitskaya.github.io/linear_algebra_practice/work12.html) Линейные пространства. Линейные преобразования и операторы
 
 ### &#x1F300; &nbsp; [№ 13](https://olgabelitskaya.github.io/linear_algebra_practice/work13.html) Логика
 
-### &#x1F300; &nbsp; № 14 Тензоры
+### &#x1F300; &nbsp; [№ 14](https://olgabelitskaya.github.io/linear_algebra_practice/work14.html) Тензоры
