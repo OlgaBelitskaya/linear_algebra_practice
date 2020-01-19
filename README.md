@@ -1,7 +1,7 @@
 
 # &#x1F4D1; &nbsp; Практические работы по линейной алгебре
 
-<img src="https://latex.codecogs.com/gif.latex?\mathscr{Webpages\;based\;on} "/>
+<img src="https://render.githubusercontent.com/render/math?\mathscr{Webpages\;based\;on}" />
 
 [`SageMathCell`](https://sagecell.sagemath.org)
 
