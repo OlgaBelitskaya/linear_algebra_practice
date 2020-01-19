@@ -30,7 +30,7 @@
 ---
 
 <details>
-<summary><img src="https://render.githubusercontent.com/render/math?math=%5Ctext%7B%5Cmathscr%7BJupyter%5C%3BNotebooks%7D%7D" /></summary>
+<summary><img src="https://render.githubusercontent.com/render/math?math=%5Ctext%7BJupyter%5C%3BNotebooks%7D" /></summary>
     
 ### [&#x1F4D3; &nbsp; № 0](https://github.com/OlgaBelitskaya/linear_algebra_practice/blob/master/work1_0.ipynb)
 ### [&#x1F4D3; &nbsp; № 1](https://github.com/OlgaBelitskaya/linear_algebra_practice/blob/master/work1_1.ipynb)
