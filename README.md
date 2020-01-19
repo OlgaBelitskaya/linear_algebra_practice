@@ -1,9 +1,7 @@
 
 # &#x1F4D1; &nbsp; Практические работы по линейной алгебре
 
-<img src="https://render.githubusercontent.com/render/math?math=%5Ctext%7BWebpages%20based%20on%7D"></img>
-
-[`SageMathCell`](https://sagecell.sagemath.org)
+<img src="https://render.githubusercontent.com/render/math?math=%5Ctext%7BWebpages%20based%20on%7D" /> [`SageMathCell`](https://sagecell.sagemath.org)
 
 <a href="https://www.instagram.com/olga.belitskaya/" style="font-size:120%;">&#x1F300; &nbsp; Instagram Posts</a> 
 &nbsp; &nbsp; &nbsp; 
@@ -32,7 +30,7 @@
 ---
 
 <details>
-<summary><img src="https://latex.codecogs.com/gif.latex?\mathscr{Notebooks} "/></summary>
+<summary><img src="https://render.githubusercontent.com/render/math?math=%5Ctext%7BNotebooks%7D" /></summary>
     
 ### [&#x1F4D3; &nbsp; № 0](https://github.com/OlgaBelitskaya/linear_algebra_practice/blob/master/work1_0.ipynb)
 ### [&#x1F4D3; &nbsp; № 1](https://github.com/OlgaBelitskaya/linear_algebra_practice/blob/master/work1_1.ipynb)
