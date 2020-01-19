@@ -1,7 +1,7 @@
 
 # &#x1F4D1; &nbsp; Практические работы по линейной алгебре
 
-<img src="https://render.githubusercontent.com/render/math?math=\mathscr{Webpages\;based\;on}" />
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1"></img>
 
 [`SageMathCell`](https://sagecell.sagemath.org)
 
