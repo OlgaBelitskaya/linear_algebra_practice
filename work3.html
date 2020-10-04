@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>LinearAlgebraWork3</title>
+    <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+    <script>$(function () {
+    sagecell.makeSagecell({inputLocation:'div.linked_sage',linked:true,evalButtonText:'Run Linked Sage Cells'});
+    sagecell.makeSagecell({inputLocation:'div.linked_python',linked:true,evalButtonText:'Run Linked Python Cells'});
+    sagecell.makeSagecell({inputLocation:'div.linked_r',linked:true,evalButtonText:'Run Linked R Cells'});
+    sagecell.makeSagecell({inputLocation:'div.sage',evalButtonText:'Run'});
+    sagecell.makeSagecell({inputLocation:'div.sage_html',evalButtonText:'Run HTML'});});
+    </script>
+    <script data-ad-client="ca-pub-9200929962680356" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  </head>
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Orbitron');
+  h1, h2 {color:#3636ff; font-family:'Orbitron'; text-shadow:5px 5px 5px #aaa;}
+  p, a {color:darkblue; font-size:110%; text-shadow:5px 5px 5px #aaa;}
+  .sagecell .CodeMirror-scroll {min-height:3em; max-height:68em;}
+  body {margin:5px 5px 5px 25px}      
+  </style>  
+  <body>
+    <h1>&#x1F4D1; &nbsp;Линейная алгебра. Практическая работа №3</h1>
+<a href="https://olgabelitskaya.github.io/README.html">&#x1F300; &nbsp; Home Page &nbsp; &nbsp;</a>
+<a href="https://olgabelitskaya.github.io/linear_algebra_practice/work2.html">&#x1F300; &nbsp; Previous &nbsp; &nbsp;</a>     
+<a href="https://olgabelitskaya.github.io/linear_algebra_practice/work4.html">&#x1F300; &nbsp; Next</a>
+    <h1>Определители, миноры и алгебраические дополнения</h1>
+    <h2>1. Определители</h2>
+    <p>Активируйте этот код перед использованием любых ячеек Linked Sage Cells</p>
+<div class="linked_sage"><script type="text/x-sage">
+M2=matrix(SR,2,var('a,b,c,d'))
+M3=matrix(SR,3,var('a,b,c,d,e,f,g,h,i'))
+M4=matrix(SR,4,
+          var('a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p'))
+A=random_matrix(ZZ,3,x=0,y=100)
+B=random_matrix(ZZ,3,x=-100,y=0) 
+C=random_matrix(ZZ,4,x=-100,y=100)
+</script></div><br/>    
+<div class="linked_sage"><script type="text/x-sage">
+for M in [M2,M3,A,B,C]: 
+    pretty_print((M,M.det()))
+</script></div>
+    <p>Активируйте этот код перед использованием любых ячеек Linked Python Cells</p>
+<div class="linked_python"><script type="text/x-sage">
+import numpy,sympy
+sympy.init_printing(use_unicode=True)
+A1=numpy.matrix(numpy.random.randint(0,100,
+                size=(3,3)))
+B1=numpy.matrix(numpy.random.randint(-100,0,
+                size=(3,3)))
+C1=numpy.matrix(numpy.random.randint(-100,100,
+                size=(4,4)))
+A2=sympy.Matrix([[-3,-3,1],[-4,-7,7],[2,2,5]])
+B2=sympy.Matrix([[2,10,7],[-5,-6,-2],[-8,4,-8]])
+C2=sympy.Matrix([[-8,-4,5,2],[3,-5,8,-2],
+                 [5,4,-8,1],[7,-2,9,5]])
+mm=sympy.symbols(" ".join(list('m_%d%d' %(i,j) 
+                 for i in [1,2] for j in [1,2])))
+M=sympy.Matrix(int(2),int(2),mm) 
+nn=sympy.symbols(" ".join(list('n_%d%d' %(i,j) 
+                 for i in [1,2,3] for j in [1,2,3])))
+N=sympy.Matrix(int(3),int(3),nn)
+</script></div><br/>
+<div class="linked_python"><script type="text/x-sage">
+for m in [A1,B1,C1]:
+    print([m,round(numpy.linalg.det(m))])
+for m in [A2,B2,C2]:
+    print([m,m.det()])
+for m in [M,N]: 
+    sympy.pprint(m)
+    sympy.pprint(m.det())
+</script></div>
+    <p>Активируйте этот код перед использованием любых ячеек Linked R Cells</p>
+<div class="linked_r"><script type="text/x-sage">
+%%r
+A<-matrix(sample.int(100,size=3*3,replace=T),
+          nrow=3,ncol=3)
+B<-matrix(sample.int(100,size=3*3,replace=T),
+          nrow=3,ncol=3)
+C<-matrix(sample.int(100,size=4*4,replace=T),
+          nrow=4,ncol=4)
+library(Matrix)
+</script></div><br/>
+<div class="linked_r"><script type="text/x-sage">
+%%r
+c(det(A),det(B),det(C))
+</script></div>       
+    <h2>2. Свойства определителей</h2>
+<div class="linked_sage"><script type="text/x-sage">
+pretty_print('A.det()=A.T.det(): '+\
+             str(A.det()==A.T.det()))
+pretty_print('(A*B).det()=(B*A).det()=A.det()*B.det(): '+\
+             str((A*B).det()==(B*A).det()==A.det()*B.det()))
+pretty_print('(-2*A).det()=(-2)^A.dimensions()[0]*A.det(): '+\
+             str((-2*A).det()==(-2)^A.dimensions()[0]*A.det()))
+# linear dependence
+[matrix([[1,2,3],[0,0,0],[7,8,9]]).det(),
+ matrix([[1,2,3],[2,4,6],[7,8,9]]).det()]
+</script></div><br/>
+<div class="linked_python"><script type="text/x-sage">
+print(round(numpy.linalg.det(A1))==\
+round(numpy.linalg.det(A1.T)),\
+round(numpy.linalg.det(A1*B1))==\
+round(numpy.linalg.det(B1*A1))==\
+round(numpy.linalg.det(A1))*round(numpy.linalg.det(B1)),\
+round(numpy.linalg.det(-2*A1))==\
+-2**A2.shape[0]*round(numpy.linalg.det(A1))) 
+# linear dependence
+round(numpy.linalg.det(numpy.matrix([[1,2,3],[0,0,0],[7,8,9]]))),\
+round(numpy.linalg.det(numpy.matrix([[1,2,3],[2,4,6],[7,8,9]])))
+</script></div><br/> 
+<div class="linked_python"><script type="text/x-sage">
+print([A2.det()==A2.T.det(),
+      (A2*B2).det()==(B2*A2).det()==A2.det()*B2.det(),
+      (-2*A2).det()==(-2)^A2.shape[0]*A2.det()])
+# linear dependence
+[sympy.Matrix([[1,2,3],[0,0,0],[7,8,9]]).det(),
+sympy.Matrix([[1,2,3],[2,4,6],[7,8,9]]).det()]
+</script></div><br/>
+<div class="linked_r"><script type="text/x-sage">
+%%r
+print(c(all.equal(det(A),det(t(A))),
+        all.equal(det(A%*%B),
+        det(B%*%A),det(A)*det(B)),
+        all.equal(det(-2*A),(-2)^(dim(A)[1])*det(A))))
+# linear dependence
+c(det(matrix(c(1,3,5,0,0,0,2,4,6),
+             nrow=3,ncol=3)),
+  det(matrix(c(1,3,5,2,6,10,2,4,6),
+             nrow=3,ncol=3)))
+</script></div>
+    <h2>3. Миноры и алгебраические дополнения</h2>
+Матрицы знаков для определителей 3-ого и 4-ого порядка<br/>      
+<div class="sage_html"><script type="text/x-sage">
+%%html
+$SIGN_{(3,3)} = \begin{pmatrix} + & - & + \\ - & + & - 
+\\ + & - & + \\ \end{pmatrix} \ \
+SIGN_{(4,4)} = \begin{pmatrix} + & - & + & - 
+\\ - & + & - & + \\ + & - & + & - \\ - & + & - & + \end{pmatrix}$
+</script></div>   
+Алгебраическое дополнение = Минор &#38; Знак (+/-)<br/>
+<div class="linked_sage"><script type="text/x-sage">
+[M3.minors(2),M4.minors(3),
+ A.minors(2),B.minors(2),C.minors(3)]
+</script></div><br/>
+<div class="linked_sage"><script type="text/x-sage">
+# разложение определителя по первому столбцу
+M3.det()==M3[0,0]*M3.minors(2)[8]-\
+M3[1,0]*M3.minors(2)[5]+M3[2,0]*M3.minors(2)[2]
+</script></div><br/>
+<div class="linked_python"><script type="text/x-sage">
+def minor(m,i,j): 
+    return [row[:j]+row[j+1:] 
+            for row in (m[:i]+m[i+1:])]
+def deternminant(m):
+    if len(m)==2: 
+        return m[0][0]*m[1][1]-m[0][1]*m[1][0]
+    det=0
+    for c in range(len(m)): 
+        det+=((-1)**c)*m[0][c]*deternminant(minor(m,0,c))
+    return det
+[minor([[1,2,3],[-4,5,-6],[-7,8,-9]],1,1),
+deternminant([[1,2,3],[-4,5,-6],[-7,8,-9]])]
+</script></div><br/>
+<div class="linked_python"><script type="text/x-sage">
+sympy.pprint(A2)
+sympy.pprint(A2.minorMatrix(0,0))
+</script></div><br/> 
+<div class="linked_python"><script type="text/x-sage">
+# разложение определителя по первому столбцу
+B2.det()==B2[0,0]*B2.minorMatrix(0,0).det()-\
+B2[1,0]*B2.minorMatrix(1,0).det()+\
+B2[2,0]*B2.minorMatrix(2,0).det()
+</script></div><br/>
+<div class="linked_r"><script type="text/x-sage">
+%%r
+minor_matrix<-function(A,i,j) A[-i,-j]
+minor<-function(A,i,j) det(A[-i,-j])
+cofactor<-function(A,i,j) (-1)^(i+j)*minor(A,i,j)
+c(minor_matrix(A,1,2),minor(A,1,2),cofactor(A,1,2))
+</script></div><br/>
+<div class="linked_r"><script type="text/x-sage">
+%%r
+c(det(A),
+ (A[1,1]*minor(A,1,1)-
+ A[2,1]*minor(A,2,1)+
+ A[3,1]*minor(A,3,1)))
+</script></div>
+    <h2>4. Задание</h2>
+Инициировать матрицу A (3x3), рассчитать определитель <br/>
+и исследовать его свойства, используя SageMath, Numpy, SymPy или R. <br/>
+Вычислить определитель с помощью разложения по третьему столбцу.<br/>
+<div class="linked_sage"><script type="text/x-sage">
+
+</script></div><br/>
+<div class="linked_python"><script type="text/x-sage">
+import sympy,numpy,pylab
+
+</script></div><br/>  
+<div class="linked_r"><script type="text/x-sage">
+%%r
+
+</script></div>
+    <h2>5. Отдельная ячейка для дополнительных экспериментов</h2>      
+<div class="sage"><script type="text/x-sage">
+
+</script></div>
+  </body>
+</html>
