@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>LinearAlgebraWork6</title>
+    <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+    <script>$(function (){
+    sagecell.makeSagecell({inputLocation:'div.linked_sage',linked:true,evalButtonText:'Run Linked Sage Cells'});
+    sagecell.makeSagecell({inputLocation:'div.linked_python',linked:true,evalButtonText:'Run Linked Python Cells'});
+    sagecell.makeSagecell({inputLocation:'div.linked_r',linked:true,evalButtonText:'Run Linked R Cells'});
+    sagecell.makeSagecell({inputLocation:'div.sage',evalButtonText:'Run'});
+    sagecell.makeSagecell({inputLocation:'div.sage_html',evalButtonText:'Run HTML'});});
+    </script>
+    <script data-ad-client="ca-pub-9200929962680356" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  </head>
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Orbitron');
+  h1, h2 {color:#3636ff; font-family:'Orbitron'; text-shadow:5px 5px 5px #aaa;}
+  p, a {color:darkblue; font-size:110%; text-shadow:5px 5px 5px #aaa;}
+  .sagecell .CodeMirror-scroll {min-height:3em; max-height:68em;}
+  body {margin:5px 5px 5px 25px;}
+  </style>  
+  <body>
+    <h1>&#x1F4D1; &nbsp; Линейная алгебра. Практическая работа №6</h1>
+    <h1>Комплексные числа</h1>
+    <h2>1. Действия с комплексными числами</h2>
+Сложение комплексных чисел
+<p>$(a + bi) + (c + di) = (a + c) + (b + d)i$</p>
+Вычитание комплексных чисел
+<p>$(a + bi) - (c + di) = (a - c) + (b - d)i$</p>
+Умножение комплексных чисел
+<p>$(a + bi) * (c + di) = (ac - bd) + (ad + bc)i$</p>
+Деление комплексных чисел
+<p>$\large{\frac{a + bi}{c + di} = \frac{(a + bi) * (c - di)}{(c + di) * (c - di)} = 
+    \frac{ac+ bd}{c^2 + d^2} + \frac{bc - ad}{c^2 + d^2}i}$</p>      
+    <p>Активируйте этот код перед использованием любых ячеек Linked Sage Cells</p>
+<div class="linked_sage"><script type="text/x-sage">
+var('a b c d'); 
+i=ComplexField(20).0; Z1=a+b*i; Z2=c+d*i
+z11,z12,z13,z14,z15=4+3*i,1+2*i,1+3*i,-10+1*i,-7+6*i
+z21,z22,z23,z24,z25=\
+CDF(4,3),CDF(1,2),CDF(1,3),CDF(-10,1),CDF(-7,6)
+z1=-(2-3**0.5)**0.5+i*(2+3**0.5)**0.5; z2=3**0.5+i; z3=-1+i
+Z1,Z2,z1,z2,z3
+</script></div><br/>     
+<div class="linked_sage"><script type="text/x-sage">
+Z1+Z2,Z1-Z2,(Z1*Z2).expand(),(Z1/Z2).expand()
+</script></div><br/>
+<div class="linked_sage"><script type="text/x-sage">
+pretty_print([r'z1+z2',r'z2-z3',r'z1*z4',r'z2/z5'])
+pretty_print([z11+z12,z12-z13,z11*z14,z12/z15])
+pretty_print([z21+z22,z22-z23,z21*z24,z22/z25])
+g=Graphics(); ls=3*['-']+3*[':']+3*['--']
+Z=[z11,z12,z13,z11+z12,z11+z13,z12+z13,
+   z11-z12,z11-z13,z12-z13]
+for k in [0..8]:
+    g+=arrow2d((0,0),(Z[k].real(),Z[k].imag()),
+               width=3,arrowsize=2,linestyle=ls[k],
+               rgbcolor=hue(abs(Z[k])/7),
+               legend_color=hue(abs(Z[k])/7),
+               legend_label=Z[k])
+g.set_legend_options(bbox_to_anchor=(1.3,0.1,0.1,0.7),
+                     font_size=15)
+g.show(gridlines=True,figsize=(9,5))
+</script></div>
+    <p>Активируйте этот код перед использованием любых ячеек Linked Python Cells</p>
+<div class="linked_python"><script type="text/x-sage">
+import numpy,sympy,mpmath
+NZ=numpy.array([4+3j,1+2j,1+3j,
+                -10+1j,-7+6j])
+nz=numpy.array([-(2-3**0.5)**0.5+(2+3**0.5)**0.5*1j,
+                3**0.5+1j,-1+1j])
+SZ=[complex(4+3*sympy.I),complex(1+2*sympy.I),
+    complex(1+3*sympy.I),complex(-10+1*sympy.I),
+    complex(-7+6*sympy.I)]
+sz=[complex(-sympy.sqrt(2-sympy.sqrt(3))+\
+            sympy.sqrt(2+sympy.sqrt(3))*sympy.I),
+    complex(sympy.sqrt(3)+1*sympy.I),
+    complex(-1+1*sympy.I)]
+</script></div><br/>
+<div class="linked_python"><script type="text/x-sage">
+print(NZ[0]+NZ[1],NZ[1]-NZ[2],
+      NZ[0]*NZ[3],NZ[1]/NZ[4])
+[SZ[0]+SZ[1],SZ[1]-SZ[2],
+ SZ[0]*SZ[3],SZ[1]/SZ[4]]
+</script></div>
+    <p>Активируйте этот код перед использованием любых ячеек Linked R Cells</p>
+<div class="linked_r"><script type="text/x-sage">
+%%r
+library(Matrix)
+Z<-c(complex(real=4,imaginary=3),
+     complex(real=1,imaginary=2),
+     complex(real=1,imaginary=3),
+     complex(real=-10,imaginary=1),
+     complex(real=-7,imaginary=6))
+z<-c(complex(real=-sqrt(2-sqrt(3)),
+             imaginary=sqrt(2+sqrt(3))),
+     complex(real=sqrt(3),imaginary=1),
+     complex(real=-1,imaginary=1))
+list(Z,z)
+</script></div><br/>
+<div class="linked_r"><script type="text/x-sage">
+%%r
+c(Z[1]+Z[2],Z[2]-Z[3],Z[1]*Z[4],Z[2]/Z[5])
+</script></div>         
+    <h2>2. Тригонометрическая форма</h2>
+Возведение комплексного числа в степень в тригонометрической форме: 
+<p>$z^k = [r * (\cos \varphi + i \sin \varphi)]^n = r^n * [\cos(n\varphi) + i \sin(n\varphi)]$</p>
+Умножение комплексных чисел в тригонометрической форме:   
+<p>$z_1 * z_2 = r_1 * (\cos \varphi_1 + i \sin \varphi_1) *  r_2 * (\cos \varphi_2 + i \sin \varphi_2) = 
+    r_1r_2 * [\cos(\varphi_1 + \varphi_2) + i \sin(\varphi_1 + \varphi_2)]$</p>
+Деление комплексных чисел в тригонометрической форме:
+<p>$\frac{z_1}{z_2} = \frac{r_1 * (\cos \varphi_1 + i \sin \varphi_1)} 
+    { r_2 * (\cos \varphi_2 + i \sin \varphi_2)} = 
+    \frac {r_1}{r_2} * [\cos(\varphi_1 - \varphi_2) + i \sin(\varphi_1 - \varphi_2)]$</p>
+Извлечение корня из комплексного числа в тригонометрической форме:
+<p>$\sqrt[n] {z} = \sqrt[n] {r * (\cos \varphi + i \sin \varphi)} = 
+    \sqrt[n]{r} * \bigg(\cos \frac{\varphi + 2\pi m}{n} + i \sin \frac{\varphi + 2\pi m}{n} \bigg), 
+    \ m = 0, 1, ..., n-1$</p>
+<p style="color:slategray;">$\mathscr{Z_1 = -\sqrt{2 - \sqrt{3}} + \sqrt{2 + \sqrt{3}} i; 
+    \ Z_2 = \sqrt{3} + i; \ Z_3 = -1 + i}$</p>
+<div class="linked_sage"><script type="text/x-sage">
+print([z1,abs(z1),arg(z1)])
+# [polar form, exponential form]
+[abs(z1)*(cos(arg(z1))+i*sin(arg(z1))),
+ abs(z1)*e^(i*(arg(z1)))]
+</script></div><br/>
+<div class="linked_python"><script type="text/x-sage">
+nr=numpy.sqrt(numpy.real(nz)**2+numpy.imag(nz)**2)
+nt=numpy.arctan2(numpy.imag(nz),numpy.real(nz))
+# [polar form, exponential form]
+[nr[0]*(numpy.cos(nt[0])+numpy.sin(nt[0])*1j),
+ nr[0]*numpy.exp(1j*(nt[0]))]
+</script></div><br/>  
+<div class="linked_python"><script type="text/x-sage">
+print(mpmath.polar(sz[0]))
+# [polar form, exponential form]
+[mpmath.fabs(sz[0])*(mpmath.cos(mpmath.arg(sz[0]))+\
+ mpmath.sin(mpmath.arg(sz[0]))*sympy.I),
+ mpmath.fabs(sz[0])*mpmath.exp(mpmath.arg(sz[0])*sympy.I)]
+</script></div><br/>  
+<div class="linked_r"><script type="text/x-sage">
+%%r
+cart2pol<-function(z) {c(Mod(z), Arg(z))}
+print(cart2pol(z[1]))
+# polar form, exponential form
+c(Mod(z[1])*(cos(Arg(z[1]))+sin(Arg(z[1]))*sqrt(as.complex(-1))),
+  Mod(z[1])*exp(Arg(z[1])*sqrt(as.complex(-1))))
+</script></div>
+<p>$\mathbb{Z_1^{10} * Z_2^6, \ Z_2^{15} \ / \ Z_3^{27}, \sqrt[4] {Z_1}}$</p>
+<div class="linked_sage"><script type="text/x-sage">
+print(z1**10*z2**6,
+      abs(z1)**10*abs(z2)**6*(cos(10*arg(z1)+6*arg(z2))+\
+                              i*sin(10*arg(z1)+6*arg(z2))))
+print(z2**15/z3**27,
+      abs(z2)**15/abs(z3)**27*(cos(15*arg(z2)-27*arg(z3))+\
+                               i*sin(15*arg(z2)-27*arg(z3))))
+r=[abs(z1)**(1/4)*(cos((arg(z1)+2*pi.n()*j)/4)+\
+                   i*sin((arg(z1)+2*pi.n()*j)/4)) 
+   for j in[0..3]] 
+print(z1**(1/4)); print(r)
+</script></div><br/>
+<div class="linked_sage"><script type="text/x-sage">
+g=Graphics()
+for j in [0..3]:
+    g+=arrow2d((0,0),(r[j].real(),r[j].imag()),
+               width=3,arrowsize=2,rgbcolor=hue(arg(r[j])),
+               legend_color=hue(arg(r[j])),
+               legend_label='r'+str(j+1)+'='+str(r[j]))
+g.set_legend_options(bbox_to_anchor=(1.1,0.1,0.1,0.7))
+g.show(gridlines=True,figsize=(9,5))
+</script></div><br/>
+<div class="linked_python"><script type="text/x-sage">
+print(nz[0]**10*nz[1]**6,
+      nr[0]**10*nr[1]**6*(numpy.cos(10*nt[0]+6*nt[1])+\
+                          numpy.sin(10*nt[0]+6*nt[1])*1j))
+print(nz[1]**15/nz[2]**27,
+      nr[1]**15/nr[2]**27*(numpy.cos(15*nt[1]-27*nt[2])+\
+                           numpy.sin(15*nt[1]-27*nt[2])*1j))
+print(nz[0]**(1/4))
+[nr[0]**(1/4)*(numpy.cos((nt[0]+2*numpy.pi*k)/4)+\
+               numpy.sin((nt[0]+2*numpy.pi*k)/4)*1j) 
+ for k in range(4)]
+</script></div><br/>
+<div class="linked_python"><script type="text/x-sage">
+print([sz[0]**10*sz[1]**6,
+complex(mpmath.fabs(sz[0])**10*mpmath.fabs(sz[1])**6*\
+(mpmath.cos(10*mpmath.arg(sz[0])+6*mpmath.arg(sz[1]))+\
+mpmath.sin(10*mpmath.arg(sz[0])+6*mpmath.arg(sz[1]))*sympy.I))])
+print([sz[1]**15/sz[2]**27,
+complex(mpmath.fabs(sz[1])**15/mpmath.fabs(sz[2])**27*\
+(mpmath.cos(15*mpmath.arg(sz[1])-27*mpmath.arg(sz[2]))+\
+mpmath.sin(15*mpmath.arg(sz[1])-27*mpmath.arg(sz[2]))*sympy.I))])
+print(sz[0]**(1/4))
+[complex(mpmath.fabs(sz[0])**(1/4)*\
+ (mpmath.cos((mpmath.arg(sz[0])+2*mpmath.pi*k)/4)+\
+ mpmath.sin((mpmath.arg(sz[0])+2*mpmath.pi*k)/4)*sympy.I)) 
+ for k in range(4)]
+</script></div><br/>
+<div class="linked_r"><script type="text/x-sage">
+%%r
+print(c((z[1]^10)*(z[2]^6),(z[2]^15)/(z[3]^27),z[1]^(1/4)))
+print(Mod(z[1])^10*Mod(z[2])^6*(cos(10*Arg(z[1])+6*Arg(z[2]))+
+      sin(10*Arg(z[1])+6*Arg(z[2]))*sqrt(as.complex(-1))))
+print(Mod(z[2])^15/Mod(z[3])^27*(cos(15*Arg(z[2])-27*Arg(z[3]))+
+      sin(15*Arg(z[2])-27*Arg(z[3]))*sqrt(as.complex(-1))))
+complex_k_root_n<-function(z,k,n){
+    Mod(z)^(1/k)*(cos((Arg(z)+2*pi*(n-1))/4)+
+                  sin((Arg(z)+2*pi*(n-1))/4)*sqrt(as.complex(-1)))}
+c(complex_k_root_n(z[1],4,1),
+  complex_k_root_n(z[1],4,2),
+  complex_k_root_n(z[1],4,3),
+  complex_k_root_n(z[1],4,4))
+</script></div>
+    <h2>3. Задание</h2>
+Задать пару произвольных комплексных чисел,<br/> 
+выполнить сложение, вычитание, деление, возведение в степень и извлечение корня,<br/>
+используя SageMath, Numpy, SymPy или R.<br/>  
+<div class="linked_sage"><script type="text/x-sage">
+
+</script></div><br/>
+<div class="linked_python"><script type="text/x-sage">
+import numpy,sympy
+
+</script></div><br/>  
+<div class="linked_r"><script type="text/x-sage">
+%%r
+
+</script></div> 
+    <h2>4. Отдельная ячейка для дополнительных экспериментов</h2>      
+<div class="sage"><script type="text/x-sage">
+
+</script></div>
+  </body>
+</html>
